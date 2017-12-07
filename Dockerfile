@@ -1,4 +1,4 @@
-FROM dockerfile/java:oracle-java8
+FROM openjdk:8-jdk-alpine
 
 ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/myservice/myservice.jar"]
 
