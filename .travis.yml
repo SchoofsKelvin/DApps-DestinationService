@@ -9,5 +9,5 @@ services:
   - docker
 script:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD docker.io
-  - mvn package docker:build
+  - mvn package
   - docker push schoofskelvin/dapps-destinationservice:tag1
