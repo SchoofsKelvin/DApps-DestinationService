@@ -8,6 +8,6 @@ sudo: required
 services:
   - docker
 script:
-  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  - mvn clean package docker:build
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD docker.io
+  - mvn package docker:build
   - docker push schoofskelvin/dapps-destinationservice:tag1
