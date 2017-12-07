@@ -64,6 +64,13 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<repository>schoofskelvin/dapps-destinationservice</repository>
+					<tag>tag1</tag>
+					<buildArgs>
+						<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+					</buildArgs>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
