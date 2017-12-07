@@ -11,4 +11,5 @@ script:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD docker.io
   - mvn package
   - docker images
-  - docker push schoofskelvin/dapps-destinationservice:tag1
+  - docker info
+  - docker push schoofskelvin/dapps-destinationservice
